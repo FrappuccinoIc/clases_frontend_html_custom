@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-color: #333;
+    width: 100vw;
+    background-color: #72e4da;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    display: flex;
 }
 
 header .logo img {
@@ -27,8 +32,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
 .banner {
@@ -39,20 +45,39 @@ nav ul li a {
 
 .contenido {
     padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
 }
 
 .contenido article {
     margin-bottom: 20px;
+    display: flex;
+    width: 600px;
+    height: 200px;
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 8px;
+    gap: 3%;
+}
+
+.contenedor-img {
+    height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .contenido article img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 100%;    
+    justify-content: left;
+}
+
+small {
+    color: rgb(126, 126, 126);
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #72e4da;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
 }
